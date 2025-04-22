@@ -22,3 +22,8 @@ jobs:
   - name: Run tests
     run: |
       pytest
+  - name: Simulate Deployment
+    run: |
+      echo "Deploying to staging environment..."
+      mkdir -p staging
+      cp app.py staging/
